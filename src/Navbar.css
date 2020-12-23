@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    /*display: grid;*/
+    /*grid-template-columns: min-content 1fr;*/
+    font-family: system-ui, sans-serif;
+
+    /* this breaks position sticky in Firefox */
+    /* overflow-x: hidden; */
+}
+
+nav {
+    /*white-space: nowrap;*/
+    background: #37474F;
+    width:100%;
+    justify-content: center;
+    
+}
+ul{
+    justify-content: space-evenly;
+}
+nav ul {
+    list-style: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+/*!* Only stick if you can fit *!*/
+/*@media (min-height: 300px) {*/
+/*    nav ul {*/
+/*        position: sticky;*/
+/*        top: 0;*/
+/*    }*/
+/*}*/
+nav ul li a {
+    display: block;
+    padding: 0.5rem 2rem;
+    color: white;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+nav ul li a.current {
+    background: black;
+}
+/*main {*/
+/*    padding-bottom: 40rem;*/
+/*}*/
+section {
+    padding: 2rem;
+    /*margin: 0 0 2rem 0;*/
+    
+}

@@ -250,7 +250,7 @@ export default class RestaurantHome extends Component {
             <div style={{display: 'flex', flexDirection: 'row', flexFlow: 'wrap', width: '99%'}}>
                 {this.state.restaurants.map((u, i) => {
                     return u.data.filter((val) => {
-                        if (this.state.searchTerm == '') {
+                        if (this.state.searchTerm === '') {
                             return val
                         } else if (val.dishes.toLowerCase().includes(this.state.searchTerm.toLowerCase())) {
                             return val
@@ -259,14 +259,14 @@ export default class RestaurantHome extends Component {
                         return (
                             <Link to={{pathname: '/FoodDetails', data: dish}} style={{textDecoration: 'none'}}>
                                 <Card style={{
-                                    height: '8rem',
-                                    width: '12rem',
+                                    height: '15rem',
+                                    width: '15rem',
                                     display: 'flex',
                                     flexDirection: 'row',
                                     alignItems: 'center', margin: '1rem',
                                     justifyContent: 'center'
                                 }}>
-                                    <img src={`/images/${dish.imagename}`} style={{height: '40%', width: '35%'}}/>
+                                    <img src={`/images/${dish.imagename}`} alt={""} style={{height: '40%', width: '35%'}}/>
                                     <CardContent style={{height: '65%', width: '50%'}}>
 
                                         <Typography variant="subtitle1" component="h4">

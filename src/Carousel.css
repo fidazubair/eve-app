@@ -1,0 +1,30 @@
+.control-dots dot selected{
+    opacity: 3;
+    width: 1rem;
+    border: solid;
+    border-radius: 10rem;
+}
+.carousel-root{
+    width:15rem;
+    height:12rem;
+   
+}
+.carousel li.slide img{
+   height: 12rem
+    
+}
+.control-arrow control-prev button{
+    background-color: #8face0;
+}
+    
+/*.slider-wrapper axis-horizontal{*/
+/*    border-radius: 1rem;*/
+/*    height: 12rem */
+/*}*/
+
+.carousel-slider {
+    border-radius: 1rem;
+}
+.carousel-status {
+    display:none;
+}

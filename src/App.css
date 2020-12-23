@@ -1,6 +1,10 @@
 /*.top-spacer {*/
 /*  height: 50vh;*/
 /*}*/
+.MuiTabs-flexContainer {
+  display: flex;
+  justify-content: center;
+}
 
 .bottom-spacer {
   height: 110vh;
@@ -60,4 +64,21 @@
   left: 96px;
   transform-origin: 72px 64.6771px;
   width:65%;
+}
+.container {
+
+  --btn-bg-color: steelblue;
+  --btn-color: white;
+  --btn-float:left;
+
+}
+
+.btn {
+
+  background-color: var(--btn-bg-color);
+  color: var(--btn-color);
+  float:var(--btn-float);
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
 }
